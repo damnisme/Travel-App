@@ -1,0 +1,20 @@
+ <div class="background-image"></div>
+ <ion-card class="login-card">
+  <ion-card-header class="login-header">
+    <ion-card-title>Login</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item lines="none">
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" class="input-field"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" class="input-field"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="login-button" (click)="login()">Login</ion-button>
+  </ion-card-content>
+</ion-card>
